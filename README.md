@@ -88,3 +88,8 @@ Each server exposes the full Gmail toolset, including:
 - **Never commit the `.gmail-mcp` directory.** `gcp-oauth.keys.json` is your OAuth client secret and each `credentials-*.json` is a live refresh token for that mailbox. Keep them out of every repo; transfer between machines via a password manager or encrypted channel, or just re-run the auth flow on the new machine (usually easier).
 - **Google may expire test-user tokens.** If the consent screen stays in "Testing" mode, refresh tokens can expire after 7 days of inactivity. Publishing the app (even unverified for personal scopes) or periodic use avoids surprise re-auths.
 - **Windows needs the `cmd /c npx` wrapper** shown above; calling `npx` directly as the command fails to spawn under some Claude Code versions.
+
+
+<!-- ca-tracked-link -->
+---
+Built by [CyberAutomations](https://cyberautomations.com/?utm_source=github&utm_medium=readme&utm_campaign=gmail-mcp-setup). Need something like this built for your business? Start there.
